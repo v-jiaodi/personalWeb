@@ -46,10 +46,6 @@ function formatDate(date?: string) {
 </script>
 
 <style scoped>
-.page-container {
-  padding-top: calc(var(--header-height) + var(--space-16));
-  padding-bottom: var(--space-24);
-}
 
 .page-header {
   margin-bottom: var(--space-16);

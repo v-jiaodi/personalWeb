@@ -45,10 +45,6 @@ useSeoMeta({ title: 'Jiaodi — Contact', description: 'Contact Jiaodi — colla
 </script>
 
 <style scoped>
-.page-container {
-  padding-top: calc(var(--header-height) + var(--space-16));
-  padding-bottom: var(--space-24);
-}
 
 .contact-wrap {
   max-width: 640px;

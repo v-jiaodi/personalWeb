@@ -248,5 +248,30 @@ const contactPath = computed(() => `/${props.locale}/contact`)
   .hero-graphic {
     display: none;
   }
+
+  .hero {
+    padding-top: calc(var(--header-height) + var(--space-10));
+    padding-bottom: var(--space-16);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: calc(var(--header-height) + var(--space-8));
+    padding-bottom: var(--space-12);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero-meta {
+    gap: var(--space-5);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 </style>

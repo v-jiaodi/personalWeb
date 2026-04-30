@@ -124,4 +124,16 @@ function formatDate(date?: string) {
   border: 1px dashed var(--border-subtle);
   border-radius: var(--radius-lg);
 }
+
+@media (max-width: 640px) {
+  .writing-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .view-all {
+    align-self: flex-start;
+  }
+}
 </style>

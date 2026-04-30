@@ -260,6 +260,7 @@ onMounted(() => {
   background: var(--text-secondary);
   border-radius: 2px;
   transition: all var(--transition-base);
+  transform-origin: center;
 }
 
 /* Responsive */
@@ -291,6 +292,26 @@ onMounted(() => {
 
   .menu-toggle {
     display: flex;
+  }
+
+  /* Hamburger → X animation */
+  .menu-toggle .bar:nth-child(1).open {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle .bar:nth-child(2).open {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .menu-toggle .bar:nth-child(3).open {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .icon-link {
+    display: none;
   }
 }
 </style>

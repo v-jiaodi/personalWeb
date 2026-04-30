@@ -105,6 +105,7 @@ const items = computed(() =>
   .now-section {
     margin: 0;
     border-radius: 0;
+    padding: var(--space-10) var(--space-5);
   }
 }
 </style>

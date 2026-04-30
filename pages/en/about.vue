@@ -73,10 +73,6 @@ const skills = [
 </script>
 
 <style scoped>
-.page-container {
-  padding-top: calc(var(--header-height) + var(--space-16));
-  padding-bottom: var(--space-24);
-}
 
 .page-header {
   margin-bottom: var(--space-16);
@@ -187,5 +183,23 @@ const skills = [
   color: var(--text-secondary);
   min-width: 60px;
   flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .page-title {
+    font-size: var(--text-3xl);
+  }
+
+  .about-tagline {
+    font-size: var(--text-lg);
+  }
+
+  .page-header {
+    margin-bottom: var(--space-10);
+  }
+
+  .about-grid {
+    gap: var(--space-8);
+  }
 }
 </style>

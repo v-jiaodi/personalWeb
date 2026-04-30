@@ -103,6 +103,18 @@ const locale = computed(() => route.path.startsWith('/en') ? 'en' : 'zh')
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: var(--space-5);
+  }
+
+  .footer-copy {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer-copy {
