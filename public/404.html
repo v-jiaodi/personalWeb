@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      // Store the original full path so the SPA can restore it after load
+      var path = window.location.pathname;
+      sessionStorage.setItem('spa_redirect_path', path);
+      // Redirect to the baseURL root
+      window.location.replace('/personalWeb/');
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+</html>
