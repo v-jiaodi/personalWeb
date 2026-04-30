@@ -100,8 +100,6 @@ const skills = [
   max-width: 720px;
 }
 
-.about-section {}
-
 .section-label {
   font-size: var(--text-xs);
   font-weight: 700;
